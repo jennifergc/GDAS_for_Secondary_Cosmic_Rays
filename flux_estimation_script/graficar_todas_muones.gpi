@@ -1,0 +1,44 @@
+#
+# Gnuplot Script for making rigidity distribution function
+# 
+# Gnuplot 5.0v
+# 
+# By Suarez-Duran M., Sept. 2014
+#
+############################################---------------###################
+
+#
+#set term epscairo 
+#set output "flux_bucaramanga_MUONES.eps"
+set term 'pdfcairo'
+set output "flux_bucaramanga_TODASYMUONES.pdf"
+set grid
+#
+#
+#DESACTIVADO
+#set grid ytics lw 0.7;
+#set grid xtics lw 0.7;
+
+#set log y;
+set log x;
+#DESACTIVADO PARA MUONES
+#set format y "10^{%L}"
+set format x "10^{%L}"
+
+#set xrange [:1.e5] 
+#set yrange [:1.e2]
+#set yrange [:1.e4]
+
+set key font "Times-New-Roman, 16"
+set xtics font "Times-New-Roman, 16"
+set ytics font "Times-New-Roman, 16"
+#
+#
+set xlabel "Momentum [GeV/c]" font "Times-New-Roman, 20"
+set ylabel "Flujo de secundarios [partículas m^{-2} min^{-1}]" font "Times-New-Roman, 20"
+#
+#
+#
+plot 'SalidaE2.hst' u 1:($14/240) t 'Subtropical' linecolor rgb "#000000" with steps, 'SalidaEnero.hst' u 1:($14/240) t 'Enero' linecolor rgb "#008080" with steps, 'SalidaFebrero.hst' u 1:($14/240) t 'Febrero' linecolor rgb "#0000FF" with steps, 'SalidaMarzo.hst' u 1:($14/240) t 'Marzo' linecolor rgb "#B8860B" with steps, 'SalidaAbril.hst' u 1:($14/240) t 'Abril' linecolor rgb "#00CED1" with steps, 'SalidaMayo.hst' u 1:($14/240) t 'Mayo' linecolor rgb "#FF00FF" with steps, 'SalidaJunio.hst' u 1:($14/240) t 'Junio' linecolor rgb "#800000" with steps, 'SalidaJulio.hst' u 1:($14/240) t 'Julio' linecolor rgb "#DC143C" with steps, 'SalidaAgosto.hst' u 1:($14/240) t 'Agosto' linecolor rgb "#008000" with steps, 'SalidaSeptiembre.hst' u 1:($14/240) t 'Septiembre' linecolor rgb "#800080" with steps, 'SalidaOctubre.hst' u 1:($14/240) t 'Octubre' linecolor rgb "#008080" with steps, 'SalidaNoviembre.hst' u 1:($14/240) t 'Noviembre' linecolor rgb "#000080" with steps, 'SalidaDiciembre.hst' u 1:($14/240) t "Diciembre" linecolor rgb "#FFD700" with steps, 'SalidaE2.hst' u 1:(($5 + $6)/240) t "{/Symbol m^{+} m^{-}}" linecolor rgb "#000000" pointtype 7 pointsize 0.1, 'SalidaEnero.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#008080" pointtype 7 pointsize 0.1, 'SalidaFebrero.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#0000FF" pointtype 7 pointsize 0.1, 'SalidaMarzo.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#B8860B" pointtype 7 pointsize 0.1, 'SalidaAbril.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#00CED1" pointtype 7 pointsize 0.1, 'SalidaMayo.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#FF00FF" pointtype 7 pointsize 0.1, 'SalidaJunio.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#800000" pointtype 7 pointsize 0.1, 'SalidaJulio.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#DC143C" pointtype 7 pointsize 0.1, 'SalidaAgosto.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#008000" pointtype 7 pointsize 0.1, 'SalidaSeptiembre.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#800080" pointtype 7 pointsize 0.1, 'SalidaOctubre.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#008080" pointtype 7 pointsize 0.1, 'SalidaNoviembre.hst' u 1:(($5 + $6)/240) t '' linecolor rgb "#000080" pointtype 7 pointsize 0.1, 'SalidaDiciembre.hst' u 1:(($5 + $6)/240) t "" linecolor rgb "#FFD700" pointtype 7 pointsize 0.1
+#
+#

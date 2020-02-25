@@ -1,0 +1,38 @@
+#
+# Gnuplot Script for making rigidity distribution function
+# 
+# Gnuplot 5.0v
+# 
+#
+#set term epscairo 
+#set output "flux_bucaramanga_ALL_PARTICLES_1212.eps"
+set term 'pdfcairo'
+set output "flux_bucaramanga_ALL_PARTICLES_1212.pdf"
+set grid
+#
+#
+#DESACTIVADO
+set grid ytics lw 0.7;
+set grid xtics lw 0.7;
+
+set log y;
+set log x;
+#DESACTIVADO PARA MUONES
+set format y "10^{%L}"
+set format x "10^{%L}"
+
+set xrange [:1.e5] 
+set yrange [:1.e2]
+#set yrange [:1.e4]
+
+set key font "Times-New-Roman, 16"
+set xtics font "Times-New-Roman, 16"
+set ytics font "Times-New-Roman, 16"
+#
+#
+set xlabel "Momentum [GeV/c]" font "Times-New-Roman, 15"
+set ylabel "Flujo de secundarios [partículas m^{-2} min^{-1}]" font "Times-New-Roman, 15"
+#
+#
+plot 'SalidaAbril.hst' u 1:($2/14400) w histeps lw 2 t "{/Symbol g}", 'SalidaAbril.hst' u 1:($3/14400) w histeps lw 2 t "e^{+}", 'SalidaAbril.hst' u 1:($4/14400) w histeps lw 2 t "e^{-}", 'SalidaAbril.hst' u 1:(($5 + $6)/14400) w histeps lw 2 t "{/Symbol m^{+} m^{-}}",'SalidaAbril.hst' u 1:($10/14400) w histeps lw 2 t "n", 'SalidaAbril.hst' u 1:($11/14400) w histeps lw 2 t "p^{+}",'SalidaAbril.hst' u 1:(($7 + $8 +$9 + $12 + $13)/14400) w histeps lw 2 t "Hadrons", 'SalidaAbril.hst' u 1:($14/14400) w histeps lw 2 t " "
+

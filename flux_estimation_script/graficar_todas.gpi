@@ -1,0 +1,48 @@
+#
+# Gnuplot Script for making rigidity distribution function
+# 
+# Gnuplot 5.0v
+# 
+# By Suarez-Duran M., Sept. 2014
+#
+############################################---------------###################
+
+#
+#set term epscairo 
+#set output "flux_bucaramanga_1212.eps"
+set term 'pdfcairo'
+set output "flux_bucaramanga_1212.pdf"
+set grid
+#
+#
+#DESACTIVADO
+#set grid ytics lw 0.7;
+#set grid xtics lw 0.7;
+
+#set log y;
+set log x;
+#DESACTIVADO PARA MUONES
+#set format y "10^{%L}"
+set format x "10^{%L}"
+
+#set xrange [:1.e5] 
+#set yrange [:1.e2]
+#set yrange [:1.e4]
+
+set key font "Times-New-Roman, 15"
+set xtics font "Times-New-Roman, 15"
+set ytics font "Times-New-Roman, 15"
+#
+#
+set xlabel "Momentum [GeV/c]" font "Times-New-Roman, 15"
+set ylabel "Flujo de secundarios [partículas m^{-2} min^{-1}]" font "Times-New-Roman, 15"
+#
+#
+#
+plot 'SalidaE2.hst' u 1:($14/240) w histeps t 'Subtropical' linecolor rgb "#000000", 'SalidaEnero.hst' u 1:($14/240) w histeps t 'Enero' linecolor rgb "#008080", 'SalidaFebrero.hst' u 1:($14/240) w histeps t 'Febrero' linecolor rgb "#0000FF", 'SalidaMarzo.hst' u 1:($14/240) w histeps t 'Marzo' linecolor rgb "#B8860B", 'SalidaAbril.hst' u 1:($14/240) w histeps t 'Abril' linecolor rgb "#00CED1", 'SalidaMayo.hst' u 1:($14/240) w histeps t 'Mayo' linecolor rgb "#FF00FF", 'SalidaJunio.hst' u 1:($14/240) w histeps t 'Junio' linecolor rgb "#800000", 'SalidaJulio.hst' u 1:($14/240) w histeps t 'Julio' linecolor rgb "#DC143C", 'SalidaAgosto.hst' u 1:($14/240) w histeps t 'Agosto' linecolor rgb "#008000", 'SalidaSeptiembre.hst' u 1:($14/240) w histeps t 'Septiembre' linecolor rgb "#800080", 'SalidaOctubre.hst' u 1:($14/240) w histeps t 'Octubre' linecolor rgb "#008080", 'SalidaNoviembre.hst' u 1:($14/240) w histeps t 'Noviembre' linecolor rgb "#000080", 'SalidaDiciembre.hst' u 1:($14/240) w histeps t "Diciembre" linecolor rgb "#FFD700"
+#
+#set term postscript enhanced "Times-New-Roman-Bold" 26 color size 15,10.5
+#
+#
+#replot
+
