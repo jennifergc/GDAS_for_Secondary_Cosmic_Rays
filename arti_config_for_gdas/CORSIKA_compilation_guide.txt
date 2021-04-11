@@ -1,36 +1,24 @@
-# /************************************************************************/
-# /*                                                                      */
-# /* Package:  arti_config_for_gdas                                       */
-# /* File:     CORSIKA_compilation_guide                                  */
-# /*                                                                      */
-# /************************************************************************/
-# /* Authors:  J. Grisales-Casadiegos                                     */
-# /* e-mail:   jennifer.grisales@saber.uis.edu.co                         */
-# /*                                                                      */
-# /************************************************************************/
-# /* Comments: Show the required configuration for CORSIKA simulations    */
-# /*           with GDAS profiles.                                        */
-# /*                                                                      */
-# /************************************************************************/
-# /* 
-#  
-# Grupo Halley (UIS), Colombia
-# All rights reserved.
-# 
-# */
-# /************************************************************************/
+# Package:  arti_config_for_gdas   
+# File:     CORSIKA_compilation_guide
+## Authors:  J. Grisales-Casadiegos, C. Sarmiento-Cano, Luis A. Núñez @nunezluis 
+## e-mail:   jennifer.grisales@saber.uis.edu.co   
+### Description: Lets configure CORSIKA and ARTI for using GDAS profiles in 'one particle simulations' and flux estimations.  Show the required configuration for CORSIKA simulations with GDAS profiles.
+************************************************************************
+## Grupo Halley (UIS), Colombia
+## All rights reserved.
+************************************************************************
 
 Standard Configutation for CORSIKA compilation for use GDAS:
 
-* Arq: 64 bit mode
-* High Energy Hadronic Interactions: QGSJETII-04
-* Low Energy Hadronic Interactions: GHEISHA 2002d
-* Detector Geometry: non-flat (volume) detector geometry
-* Other: EFIELD, CURVED, LPM.
+>Arq: 64 bit mode
+>High Energy Hadronic Interactions: QGSJETII-04
+>Low Energy Hadronic Interactions: GHEISHA 2002d
+>Detector Geometry: non-flat (volume) detector geometry
+>Other: EFIELD, CURVED, LPM.
 
-Without GDAS, you should add the ATMEXT option tho the list.
+**Without GDAS, you should add the ATMEXT option tho the list.**
 
-Example of datacard Required for CORSIKA:
+### Example of datacard Required for CORSIKA:
 _______________________________________________________________
 RUNNR       999900
 EVTNR       1
