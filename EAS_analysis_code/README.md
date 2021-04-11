@@ -6,3 +6,4 @@
 ## Grupo Halley (UIS), Colombia
 ## All rights reserved.
 ************************************************************************
+Please read the GUIDE.md for have the information for use correctly the codes.
