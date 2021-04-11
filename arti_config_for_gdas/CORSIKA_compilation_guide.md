@@ -23,7 +23,8 @@ Standard Configutation for CORSIKA compilation for use GDAS:
 *Without GDAS, you should add the ATMEXT option tho the list.*
 
 ### Example of datacard Required for CORSIKA:
-`
+```
+{
 _______________________________________________________________
 RUNNR       999900
 EVTNR       1
@@ -66,5 +67,6 @@ THIN        1E-06  1E02  25E02
 USER        jennifer
 EXIT
 ___________________________________________________________
-`
+}
+```
 
