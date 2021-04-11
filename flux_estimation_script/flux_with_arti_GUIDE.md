@@ -27,11 +27,11 @@
 
 ### DATA ANALYSIS (bash lines)
 
-:::::UNZIP FILES, GENERATE .PRI AND .SEC files::::::
+UNZIP FILES, GENERATE .PRI AND .SEC files
 
 >for i in DAT??????.bz2; do j=$(echo $i | sed -e 's/.bz2//'); u=$(echo $j | sed -e 's/DAT//'); bzip2 -d -k $i; echo $j | ../../../arti/analysis/lagocrkread | ../../../arti/analysis/analysis -p -v $u; rm $j; done
 
-CREATE .shw.bz2 AND .hst FILE:::::::::::::::::::::::::::
+CREATE .shw.bz2 AND .hst FILE
 
 >bzcat *sec.bz2 | ../../../arti/analysis/showers -a 20 -d 20 -c 956. -v SalidaE6
 
