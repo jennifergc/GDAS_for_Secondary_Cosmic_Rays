@@ -24,7 +24,7 @@ Standard Configutation for CORSIKA compilation for use GDAS:
 
 ### Example of datacard Required for CORSIKA:
 ```
-{
+
 _______________________________________________________________
 RUNNR       999900
 EVTNR       1
@@ -67,6 +67,6 @@ THIN        1E-06  1E02  25E02
 USER        jennifer
 EXIT
 ___________________________________________________________
-}
+
 ```
 
