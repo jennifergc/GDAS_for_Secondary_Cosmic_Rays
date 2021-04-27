@@ -1,10 +1,10 @@
 # This guide tells you how to simulate a certain number of showers for an specific particle (CORSIKA ID)
 
 To allow a easier interaction with corsika, we're going to use a pearl routine for generate the datacards of each sigle shower.
-This routine is the ARTI Package and are named 'rain.pl'. ./rain.pl -r . -v 76400 -s bga -m 1E6 -q 0 -p 5626
+This routine is the ARTI Package and are named 'rain.pl'. 
 
-1. Copy the location from your ARTI's directory like this: ~/arti/sims/rain.pl to the RUN directory in CORSIKA: ~/corsika-76400/run
-2. Now, run the rain.pl settin the initial parameters: for example: ./rain.pl -r . -v 76400 -s bga -m 1E6 -q 0 -p 5626 where:
+1. Copy the location from your ARTI's directory like this: ```~/arti/sims/rain.pl``` to the RUN directory in CORSIKA: ```~/corsika-76400/run```
+2. Now, run the rain.pl settin the initial parameters: for example: ```./rain.pl -r . -v 76400 -s bga -m 1E6 -q 0 -p 5626``` where:
 
 ```
 A simple input files generator for CORSIKA
