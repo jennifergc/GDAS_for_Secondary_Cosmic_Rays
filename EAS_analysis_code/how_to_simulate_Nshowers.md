@@ -6,7 +6,7 @@ This routine is the ARTI Package and are named 'rain.pl'. ./rain.pl -r . -v 7640
 1. Copy the location from your ARTI's directory like this: ~/arti/sims/rain.pl to the RUN directory in CORSIKA: ~/corsika-76400/run
 2. Now, run the rain.pl settin the initial parameters: for example: ./rain.pl -r . -v 76400 -s bga -m 1E6 -q 0 -p 5626 where:
 
-´´´
+```
 A simple input files generator for CORSIKA
        (C) 2013 - H. Asorey - asoreyh\@cab.cnea.gov.ar
        Usage: See $0 -?  - If you enjoy it, please send me an email\n
@@ -29,13 +29,13 @@ A simple input files generator for CORSIKA
        -m <energy>                         Defines energy (in GeV) for monoenergetic showers (CHERENKOV)
        -q <theta>                          Defines zenith angle (in degs) for fixed angle showers (CHERENKOV)
        -p <prmpar>                         Defines primary particle (see table 4 pg 87) (CHERENKOV)
-  ´´´
+  ```
 Remember that for LAGO sites, you can set -s and digite the site identifier inside the rain.pl routine (you can review this since the 405 line).
 If you'll not use this sites, don't set the site and you'll set the geomagnetic field and level manually then.
   
 3. Run rain.pl the output:
 
-´´´
+```
 WARNING! Site selected for simulation: bga.
 
 Working directory (where CORSIKA run files are located)?
@@ -81,10 +81,10 @@ Write .dbase file?
 <DATBAS T>: (ENTER/default)
 Track longitudinal development of secondaries (LONGI)?
 <LLONGI F>: T (F or ENTER if you are using ARTI for flux calculations)
-´´´
+```
 	
 4. Final datacard... in screen 'rain.pl' show you the datacard model, you should confirm it press ENTER
-´´´
+```
 RUNNR       999900
 EVTNR       1
 NSHOW       1
@@ -129,10 +129,10 @@ EXIT
 # I will run this simulation using those parameters
 # Please check and press ENTER to continue; CTRL-C to abort
 ###################################################################
-´´´
+```
 
 5. After ENTER, the simulation will be launched and should show you in screen:
-´´´
+```
 ###################################################################
 # I will run this simulation using those parameters
 # Please check and press ENTER to continue; CTRL-C to abort
@@ -149,7 +149,7 @@ There is a screen on:
 ###################################################################
 # BYE BYE
 ###################################################################
-´´´
+```
 
 6. You need wait... and then enjoy the .long file.
 
