@@ -33,7 +33,7 @@ A simple input files generator for CORSIKA
 Remember that for LAGO sites, you can set -s and digite the site identifier inside the rain.pl routine (you can review this since the 405 line).
 If you'll not use this sites, don't set the site and you'll set the geomagnetic field and level manually then.
   
-3. Run rain.pl the output:
+3. After run rain.pl you'll see in screen this output:
 
 ```
 WARNING! Site selected for simulation: bga.
@@ -83,7 +83,7 @@ Track longitudinal development of secondaries (LONGI)?
 <LLONGI F>: T (F or ENTER if you are using ARTI for flux calculations)
 ```
 	
-4. Final datacard... in screen 'rain.pl' show you the datacard model, you should confirm it press ENTER
+4. Final datacard: they'll show you the datacard model, you should confirm it press ENTER if don't CTRL+C
 ```
 RUNNR       999900
 EVTNR       1
@@ -131,7 +131,7 @@ EXIT
 ###################################################################
 ```
 
-5. After ENTER, the simulation will be launched and should show you in screen:
+5. After ENTER, the simulation will be launched and they show you in screen this:
 ```
 ###################################################################
 # I will run this simulation using those parameters
